@@ -1,0 +1,30 @@
+# Build
+obj/
+domotics_rpi
+*.o
+*.a
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+*.pid
+
+# OS
+.DS_Store
+Thumbs.db
+
+
+scripts_tools/git.sh
+

@@ -1,0 +1,18 @@
+[Unit]
+Description=Domotics RPi Controller - MQTT to GPIO/WS2812 bridge
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/domotics_rpi
+Restart=always
+RestartSec=10
+User=root
+Group=root
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=domotics-rpi
+
+[Install]
+WantedBy=multi-user.target
